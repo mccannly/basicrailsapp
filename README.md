@@ -1,24 +1,3 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This README This README tells the story of a 32 year old wife and mother of a precocious toddler who decided to take a leap and try something new. Something she'd lived on the cusp of her entire career. Something that always felt just beyond her grasp. Here now is her first example of the notion she describes as "Impostry"
