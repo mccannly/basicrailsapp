@@ -14,8 +14,12 @@
   </head>
 
   <body>
-    <div class="notice"><%= notice %></div>
-    <div><%= alert %></div>
+    <% if notice %>
+    <div class="alert alert-info" role="alert"><%= notice %></div>
+    <% end %>
+    <% if alert %>
+    <div class="alert alert-danger" role="alert"><%= alert %></div>
+    <% end %>
     <nav class="navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -41,12 +45,23 @@
         
           </li>
           <li class="pull-right">
-          
-            <% if user_signed_in? %>
-              <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-            <% else %>
-              <%= link_to('Login', new_user_session_path) %>
-            <% end %>
+            <ul>
+              <li>
+                <% if user_signed_in? %>
+                  <%= link_to('My Account', "/edit") %>
+                  
+                <% end %>
+              </li>
+              <li class="pull-right">
+              
+                <% if user_signed_in? %>
+                 
+                  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+                <% else %>
+                  <%= link_to('Login', new_user_session_path) %>
+                <% end %>
+              </li>
+            </ul>
           </li>
         </ul>
         

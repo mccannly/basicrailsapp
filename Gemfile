@@ -36,6 +36,7 @@ gem 'pg', '~> 0.20'
 # gem 'capistrano-rails', group: :development
 gem 'devise' 
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
+gem 'cancancan', '~> 1.10'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
