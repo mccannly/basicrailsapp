@@ -31,7 +31,16 @@
           <li><%= link_to "About", "/simple_pages/about" %></li>
           <li><%= link_to "Contact", "/simple_pages/contact" %></li>
           <li><%= link_to "Products", products_path %></li>
+          <li> 
+          
+              <%= form_with(url: products_path, class: "navbar-form navbar-left", method: 'get', local: true) do |form| %>
+              <%= form.text_field :q, id: 'q', value: params[:q], class: "form-control" %>
+              <%= form.submit 'Search', class: "btn btn-primary" %>
+        
+          </li>
           </ul>
+
+        <% end %>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
