@@ -16,11 +16,23 @@ h1 {
   color: #133772;
   text-align: center;
 }
+
+h2.deviseviews {
+  margin: 40px 0 40px 0;
+}
  
 a {
   text-decoration: none;
   color: #fff;
   display: block;
+}
+
+label.form-check-label{
+  display: inline;
+}
+
+div.form-check{
+  margin-bottom: 20px;
 }
 
 ul {
@@ -97,11 +109,11 @@ ul.primary li:hover > a{
 } 
 
 input:invalid {
-  border: 2px dashed red;
+  border: 1px solid red;
 }
 
 input:valid {
-  border: 2px solid black;
+  border: 1px solid grayS;
 }
 
 @media only screen and (max-width: 600px) {

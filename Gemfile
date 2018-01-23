@@ -34,6 +34,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'pg', '~> 0.20'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'devise' 
+gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
